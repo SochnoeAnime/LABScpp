@@ -11,54 +11,54 @@ using namespace std;
 
 int main() {
 
-    for (int i = 1; i < 250; i++)
+    for (int i = 1; i < 16; i++)
     {
         switch (i)
         {
+        case 1:
+            cout << "Message #" << i << endl;
+            break;
+        case 2:
+            cout << "Message #" << i << endl;
+            break;
+        case 3:
+            cout << "Message #" << i << endl;
+            break;
+        case 4:
+            cout << "Message #" << i << endl;
+            break;
+        case 5:
+            cout << "Message #" << i << endl;
+            break;
+        case 6:
+            cout << "Message #" << i << endl;
+            break;
+        case 7:
+            cout << "Message #" << i << endl;
+            break;
+        case 8:
+            cout << "Message #" << i << endl;
+            break;
+        case 9:
+            cout << "Message #" << i << endl;
+            break;
         case 10:
-            cout << "Message #1\n";
+            cout << "Message #" << i << endl;
             break;
-        case 20:
-            cout << "Message #2\n";
+        case 11:
+            cout << "Message #" << i << endl;
             break;
-        case 30:
-            cout << "Message #3\n";
+        case 12:
+            cout << "Message #" << i << endl;
             break;
-        case 40:
-            cout << "Message #4\n";
+        case 13:
+            cout << "Message #" << i << endl;
             break;
-        case 50:
-            cout << "Message #5\n";
+        case 14:
+            ccout << "Message #" << i << endl;
             break;
-        case 60:
-            cout << "Message #6\n";
-            break;
-        case 70:
-            cout << "Message #7\n";
-            break;
-        case 80:
-            cout << "Message #8\n";
-            break;
-        case 90:
-            cout << "Message #9\n";
-            break;
-        case 100:
-            cout << "Message #10\n";
-            break;
-        case 110:
-            cout << "Message #11\n";
-            break;
-        case 120:
-            cout << "Message #12\n";
-            break;
-        case 130:
-            cout << "Message #13\n";
-            break;
-        case 140:
-            cout << "Message #14\n";
-            break;
-        case 150:
-            cout << "Message #15\n";
+        case 15:
+            cout << "Message #" << i << endl;
             break;
         default:
             break;
