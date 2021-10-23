@@ -21,7 +21,7 @@ int main() {
     cout << endl;
 
     cout << FactorialFunc(fnum) << "\n\n";
-    for (int i = 1; i <= pnum; i++)
+    for (int i = 2; i <= pnum; i++)
     {
         if (PrimeNumbersFunc(i) == 1) cout << i << endl;
     }  
