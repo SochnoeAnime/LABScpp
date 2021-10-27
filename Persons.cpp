@@ -1,4 +1,4 @@
-﻿/***********************************/
+/***********************************/
 /*				   */
 /* Code by: Khromov Egor Pavlovich */
 /* github.com/SochnoeAnime/LABScpp */
@@ -48,7 +48,7 @@ public:
 };
 
 int Menu(int m, Person p[]);
-int ChangeInfo(int id, Person p[]);
+void ChangeInfo(int id, Person p[]);
 void GetInfo(int id, Person p[]);
 
 int main() {
@@ -109,7 +109,7 @@ void GetInfo(int id, Person p[]) {
     cout << "Id: " << p[id].GetId() << "\t\tName: " + p[id].GetName() + "\t\tAge: " << p[id].GetAge() << "\t\tHeight: " << p[id].GetHeight() << "\n";
 }
 
-int ChangeInfo(int id, Person p[]) {
+void ChangeInfo(int id, Person p[]) {
 
     char m;//menu 
     string n;
@@ -144,5 +144,4 @@ int ChangeInfo(int id, Person p[]) {
         cin >> m;
     }
 
-    return 0;
 }
