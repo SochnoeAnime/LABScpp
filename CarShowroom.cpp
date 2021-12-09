@@ -2,7 +2,7 @@
 /*				   */
 /* Code by: Khromov Egor Pavlovich */
 /* github.com/SochnoeAnime/LABScpp */
-/*		10.2021		   */
+/*		12.2021		   */
 /*				   */
 /***********************************/
 #include <iostream>
