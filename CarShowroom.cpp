@@ -1,4 +1,11 @@
-﻿#include <iostream>
+/***********************************/
+/*				   */
+/* Code by: Khromov Egor Pavlovich */
+/* github.com/SochnoeAnime/LABScpp */
+/*		10.2021		   */
+/*				   */
+/***********************************/
+#include <iostream>
 #include <string.h>
 
 using namespace std;
