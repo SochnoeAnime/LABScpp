@@ -17,15 +17,23 @@ int main()
     setlocale(LC_ALL, "Russian");
     string numb;
     cin >> numb;
-    string str = ToWords(stoi(numb));
-    cout << numb << " = " << str;
+    if (numb[0] == '-') {
+        numb = numb.erase(0, 1);
+        string str = ToWords(stod(numb));
+        cout << numb << " = " << "минус " << str;
+    }
+    else
+    {
+        string str = ToWords(stod(numb));
+        cout << numb << " = " << str;
+    }
 
     return 0;
 }
 
 string ToWords(int numb) {
 
-    int rank[11] = { 0,1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000};
+    int rank[12] = { 0,1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000,10000000000 };
 
     string basis[11][10] = {
         {"","","","","","","","","",""},
