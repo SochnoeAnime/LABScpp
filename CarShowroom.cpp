@@ -18,6 +18,7 @@ public:
     virtual ~Showroom() {}
     virtual void AddCar(string car) = 0;
     virtual string GetCar() = 0;
+    virtual int CountCar() = 0;
 };
 
 class Showcase : public Showroom {
@@ -27,6 +28,7 @@ public:
     virtual ~Showcase()override {}
     virtual void AddCar(string c)override;
     virtual string GetCar()override;
+    virtual int CountCar()override;
 };
 
 class Storage : public Showroom {
@@ -36,6 +38,7 @@ public:
     virtual ~Storage()override {}
     virtual void AddCar(string c)override;
     virtual string GetCar()override;
+    virtual int CountCar()override;
 };
 
 
@@ -52,6 +55,8 @@ int main() {
 
     cout << "In the showcase there are: " << showcase.GetCar() << endl;
     cout << "In the storage there are: " << storage.GetCar() << endl;
+    cout << "Cars on the showcase: " << showcase.CountCar() << endl;
+    cout << "Cars in stock: " << storage.CountCar() << endl;
 
     return 0;
 }
@@ -64,10 +69,18 @@ string Storage::GetCar() {
     return car;
 }
 
+int Storage::CountCar() {
+    return (count(car.begin(), car.end(), ',') + 1);
+}
+
 void Showcase::AddCar(string c) {
     car.empty() ? car += c : car += ", " + c;
 }
 
 string Showcase::GetCar() {
     return car;
+}
+
+int Showcase::CountCar() {
+    return (count(car.begin(), car.end(), ',') + 1);
 }
